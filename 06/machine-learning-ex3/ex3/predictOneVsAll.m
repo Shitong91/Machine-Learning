@@ -29,7 +29,14 @@ X = [ones(m, 1) X];
 %       are in rows, then, you can use max(A, [], 2) to obtain the max 
 %       for each row.
 %       
-
+p_i = zeros(num_labels, 1);
+for i = 1:m
+for c = 1:num_labels    
+p_i(c,:)=all_theta(c,:)*X(i,:)'; 
+end
+[ma,a]=max(p_i,[],1);
+p(i,1)=a;
+end
 
 
 
