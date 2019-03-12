@@ -1,9 +1,0 @@
-1. Overfitting
-1.1 underfitting
-Underfitting, or high bias, is when the form of our hypothesis function h maps poorly to the trend of the data. It is usually caused by a function that is too simple or uses too few features.
-也就是说最终确定的模型误差太大
-
-1.2 Overfitting
-At the other extreme, overfitting, or high variance, is caused by a hypothesis function that fits the available data but does not generalize well to predict new data. It is usually caused by a complicated function that creates a lot of unnecessary curves and angles unrelated to the data.
-简单来说就是：过拟合在traning data 中效果非常好，但是一到预测时，效果非常差。
-
