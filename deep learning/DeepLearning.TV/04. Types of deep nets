@@ -1,0 +1,34 @@
+按应用对deep nets 分类
+
+1. Supervised learning
+
+1)Multilayer Perception     MLP
+MLP（Multi-Layer Perception），即多层感知器，是一种前向结构的人工神经网络，映射一组输入向量到一组输出向量。MLP可以被看做是一个有向图，由多个节点层组成，每一层全连接到下一层。除了输入节点，每个节点都是一个带有非线性激活函数的神经元（或称处理单元）。一种被称为反向传播算法的监督学习方法常被用来训练MLP。
+
+这就是Andrew Ng 在Machine learning 课程中讲到的neural network
+
+2)Deep Belief Network       DBN
+深度信念网络（Deep Belief Networks, DBNs）由Geoffrey Hinton于2006年提出，是一种经典的深度生成式模型，通过将一系列受限玻尔兹曼机（RBM）单元堆叠而进行训练。这一模型在MNIST数据集上的表现超越了当时流行的SVM，从而开启了深度学习在学术界和工业界的浪潮，在深度学习的发展历史中具有重要意义。尽管随着大量表现更好的深度学习算法的出现，深度信念网络已经很少使用，但其理论的优美性、方法的开创性和历史意义的重要性使得本文仍将对其进行较细致的介绍。
+
+3)Recursive Neural Tensor Network (RNTN)  
+递归神经网络
+4)Recurrent Net
+循环神经网络
+5)Convolutiona Net
+卷积神经网络
+
+应用上：
+- Natural Language Processing: 
+      use a Recursive Neural Tensor Network   (RNTN) or Recurrent Net. 
+- Image Recognition: 
+      use a DBN or Convolutional Net 
+- Object Recognition: 
+      use a Convolutional Net or RNTN 
+- Speech Recognition: use a Recurrent Net
+
+2. Unsupervised learning
+
+2.1 Restricted Boltzmann Machine (RBM) 
+受限玻尔兹曼机
+2.2 some other kind of autoencoder
+自动编码器

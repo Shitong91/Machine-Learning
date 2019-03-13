@@ -1,0 +1,8 @@
+For machine learning， there are many classifiers.
+
+1. logistic regression
+2. support Vector Machine
+3. Naive Bayes
+4. Neural network
+
+从目前理解的程度来说，深度学习就是neural network的拓展。

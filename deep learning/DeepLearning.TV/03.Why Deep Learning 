@@ -1,0 +1,4 @@
+要解决的任务不复杂时，用任何分类方法都可以解决，
+但是，when the patterns get really complex, neural nets start to outperform all of their competition.
+
+但必须使用GPUs进行数据训练，一般的电脑不能完成这样的任务。
