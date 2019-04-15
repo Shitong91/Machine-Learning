@@ -1,1 +1,7 @@
-vanishing gradient
+vanishing gradient 和 exploding gradient
+
+ the process for training a net is known as backpropagation, or backprop.  During backprop, weights and biases are tweaked slightly until the lowest possible cost is achieved. An important aspect of this process is the gradient, which is a measure of how much the cost changes with respect to a change in a weight or bias value.  
+
+Backprop, as the name suggests, requires the gradient to be calculated first at the output layer, then backwards across the net to the first hidden layer. Each time the gradient is calculated, the net must compute the product of all the previous gradients up to that point. Since all the gradients are fractions between 0 and 1 – and the product of fractions in this range results in a smaller fraction – the gradient continues to shrink.
+
+For example, if the first two gradients are one fourth and one third, then the next gradient would be one fourth of one third, which is one twelfth. The following gradient would be one twelfth of one fourth, which is one forty-eighth, and so on. Since the layers near the input layer receive the smallest gradients, the net would take a very long time to train. As a subsequent result, the overall accuracy would suffer. 
