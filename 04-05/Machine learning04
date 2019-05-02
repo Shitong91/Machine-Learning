@@ -1,6 +1,0 @@
-Logistic Regression
-
-注意这里hypothesis function的形式发生了变化。
-但是梯度形式上和Linear function没有什么区别。
-
-关于梯度的推导见手写照片。

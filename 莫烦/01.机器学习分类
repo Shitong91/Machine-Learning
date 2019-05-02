@@ -1,0 +1,7 @@
+
+监督学习 supervised learning;   数据有对应的lable
+非监督学习 unsupervised learning; 数据无lable
+半监督学习 semi-supervised learning; 少量有lable，大量没有
+强化学习 reinforcement learning;    从经验中总结提升的
+遗传算法 genetic algorithm.         优胜劣汰
+
