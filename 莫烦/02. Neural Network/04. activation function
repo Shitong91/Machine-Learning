@@ -1,0 +1,11 @@
+激励函数的作用是输出非线性的结果
+
+常用的activation function
+
+1. relu
+2. sigmoid
+3. tanh
+
+在卷积神经网络 Convolutional neural networks 的卷积层中, 推荐的激励函数是 relu. 
+
+在循环神经网络中 recurrent neural networks, 推荐的是 tanh 或者是 relu
