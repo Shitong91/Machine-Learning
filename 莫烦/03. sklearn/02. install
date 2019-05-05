@@ -1,0 +1,18 @@
+安装 Scikit-learn (sklearn) 最简单的方法就是使用 pip 安装它.
+
+首先确认自己电脑中有安装
+
+    Python (>=2.6 或 >=3.3 版本)
+    Numpy (>=1.6.1)
+    Scipy (>=0.9)
+
+如果还不确定如何安装 Numpy 请查看这个 安装 Numpy 教程. 如果能顺利安装 Numpy 那 Scipy 的安装就没有问题了.
+
+然后找到你的 Terminal (MacOS or Linux), 或者 CMD (Windows). 输入以下语句:
+
+# python 2+ 版本复制:
+pip install -U scikit-learn
+
+# python 3+ 版本复制:
+pip3 install -U scikit-learn
+

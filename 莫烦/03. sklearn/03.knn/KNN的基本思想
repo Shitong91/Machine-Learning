@@ -1,0 +1,42 @@
+
+1. 基本思想
+NN的基本思想是：输入没有标签（标注数据的类别），即没有经过分类的新数据，首先提取新数据的特征并与测试集中的每一个数据特征进行比较；然后从测试集中提取K个最邻近（最相似）的数据特征标签，统计这K个最邻近数据中出现次数最多的分类，将其作为新的数据类别。
+KNN的这种基本思想有点类似于生活中的“物以类聚，人以群分”。
+--------------------- 
+
+2. KNN三要素
+
+2.1 K值选择
+若k值较小，只有与输入实例较近（相似）的训练实例才会对预测结果起作用，预测结果会对近邻实例点非常敏感。如果近邻实例点恰巧是噪声，预测就会出错。容易发生过拟合。
+
+若k较大，与输入实例较远的（不相似的）训练实例也会对预测起作用，容易使预测出错。k值的增大就意味着整体的模型变简单。
+
+2.2 距离度量
+
+2.3 分类决策规则
+
+2.3.1、投票表决
+少数服从多数，输入实例的k个近邻中哪个类的实例点最多，就分为该类。
+2.3.2、加权投票法（优化）
+根据距离的远近，对K个近邻的投票进行加权，距离越近则权重越大（比如权重为距离的倒数）。
+
+
+3. sklearn库的使用
+
+sklearn库中有两种nearest neighbors classifiers: 
+1）KNeighborsClassifier implements learning based on the nearest neighbors of each query point, 
+where is an integer value specified by the user. 
+
+2）RadiusNeighborsClassifier implements learning based on the number of neighbors within a fixed 
+radius of each training point, where is a floating-point value specified by the user.
+
+这里仅列出KneighborsClassifier
+
+sklearn.neighbors.KNeighborsClassifier
+
+KNeighborsClassifier(n_neighbors=5, weights=’uniform’, algorithm=’auto’, leaf_size=30, p=2, metric=’minkowski’, metric_params=None, n_jobs=None, **kwargs)[source]
+
+默认k值为5
+
+具体见链接：
+https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html#sklearn.neighbors.KNeighborsClassifier

@@ -13,7 +13,7 @@ def add_layer(inputs,in_size,out_size,activation_function=None):
     return outputs
 
 def compute_accuracy(v_xs,v_ys):
-    global prediction
+    global prediction     #全局变量定义
     y_pre = sess.run(prediction, feed_dict={xs:v_xs})
     correct_prediction = tf.equal(tf.argmax(y_pre,1), tf.argmax(v_ys,1))
     accuracy = tf.reduce_mean(tf.cast(correct_prediction,tf.float32))
