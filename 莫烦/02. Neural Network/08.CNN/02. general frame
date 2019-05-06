@@ -1,0 +1,13 @@
+
+Input : image
+
+Convolutional layer
+Max Pooling
+
+COnvolutional layer
+Max Pooling
+
+Fully Connected
+Fully Connected
+
+Classifier

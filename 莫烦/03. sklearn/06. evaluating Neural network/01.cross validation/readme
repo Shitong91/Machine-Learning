@@ -1,0 +1,10 @@
+1. 分为 Training and Test data
+
+2. plot error curve and accuracy curve
+
+误差曲线随着时间逐渐减小
+
+
+3. regularation 来防止果拟合
+
+4. Cross-validation
